@@ -16,9 +16,12 @@ namespace VA_chain
             this.NodeOut = NodeOut;
         }
 
+        /*index of the last node in chain*/
         public int Index { get; set; }
         public List<int> VaChain { get; set; }
         public List<int> AniChain { get; set; }
+
+        /*index of nodes that can't be use because already contain an va or ani aleady used*/
         public List<int> NodeOut { get; set; }
 
     }
